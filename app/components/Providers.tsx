@@ -1,11 +1,11 @@
-"use cleint";
+"use client"
 
 import { ImageKitProvider } from "@imagekit/next";
 import { SessionProvider } from "next-auth/react";
 import React from "react";
 const urlEndpoint = process.env.IMAGEKIT_URL_ENDPOINT || "";
 
-export async function providers({ children }: { children: React.ReactNode }) {
+  function Providers({ children }: { children: React.ReactNode }) {
   return (
     <div>
       <SessionProvider refetchInterval={5 * 60}>
@@ -16,3 +16,4 @@ export async function providers({ children }: { children: React.ReactNode }) {
     </div>
   );
 }
+export default Providers

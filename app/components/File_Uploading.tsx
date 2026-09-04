@@ -1,4 +1,4 @@
-"use client"; // This component must be a client component
+"use client"; 
 
 import {
   ImageKitAbortError,
@@ -7,8 +7,7 @@ import {
   ImageKitUploadNetworkError,
   upload,
 } from "@imagekit/next";
-import { Span } from "next/dist/trace";
-import { ChangeEvent, useRef, useState } from "react";
+import {  useState } from "react";
 interface FileUploadpropes {
   Onsuccess: (req: any) => void;
   onProgress: (progress: number) => void;
